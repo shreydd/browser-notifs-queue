@@ -30,7 +30,7 @@ export default function BrowserNotifs() {
   }, [activeNotifs]);
 
   return (
-    <section className="flex flex-col gap-4 items-center justify-center h-dvh">
+    <section className="flex flex-col gap-4 items-center justify-center p-6">
       <h1 className="text-xl font-normal">Native Web Notification API</h1>
       <button
         className="border p-1 cursor-pointer px-2"
