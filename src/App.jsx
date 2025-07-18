@@ -1,5 +1,5 @@
-import BrowserNotifs from "./BrowserNotifs";
-import ToastNotifs from "./ToastNotifs";
+import BrowserNotifs from "./components/BrowserNotifs";
+import ToastNotifs from "./components/ToastNotifs";
 
 export default function App() {
   const notifsGranted = Notification.permission === "granted";
@@ -10,7 +10,9 @@ export default function App() {
     alert("This browser does not support desktop notification");
   }
 
-  if (notifsGranted) return <BrowserNotifs />;
-
-  return <ToastNotifs />;
+  return (
+    <div className="max-w-7xl mx-auto px-4 space-y-4">
+      {notifsGranted ? <BrowserNotifs /> : <ToastNotifs />}
+    </div>
+  );
 }
