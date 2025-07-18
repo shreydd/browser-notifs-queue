@@ -28,10 +28,10 @@ export default function IssuesCard({ item }) {
       <div className="flex flex-col gap-2">
         <hr />
         <div className="flex gap-2">
-          <Link to={item?.comments_url} className="flex text-xs hover:bg-gray-200 py-1 px-2 bg-gray-100 rounded gap-1 items-center">
+          <div className="flex text-xs py-1 px-2 bg-gray-100 rounded gap-1 items-center">
             <MessageSquare size={12} />
             <span>{item?.comments}</span>
-          </Link>
+          </div>
           <div className="text-xs flex items-center">
             {item?.labels.map(item => (
               <span className="py-1 px-3 rounded-full bg-blue-400 text-white" key={item?.node_id}>{item?.name}</span>
