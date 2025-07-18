@@ -58,7 +58,7 @@ export default function IssuesTracker() {
     );
 
   return (
-    <main className="max-w-7xl mx-auto p-4">
+    <main className="max-w-7xl mx-auto p-4 mt-6">
       <h1 className="mb-6 text-center font-bold text-xl">
         Github issues on React.js
       </h1>
